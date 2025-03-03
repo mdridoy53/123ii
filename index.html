@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live TV Show Grid - Version 3.0</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<h1>Live TV 360i</h1>
+
+<div class="grid-container">
+  <div class="grid-item" onclick="openModal('https://amartechbd.xyz/toffeebd/?play=match-1')">
+    <img class="lazy" data-src="https://images.toffeelive.com/images/program/304030/logo/240x240/mobile_logo_058213001739268041.png" alt="ICC Champions Trophy">
+    <p>Champions Trophy 2025 Bangla VIP</p>
+    <p></p>
+  </div>
+  <div class="grid-item" onclick="openModal('https://amartechbd.xyz/toffeebd/?play=match-1')">
+    <img class="lazy" data-src="https://images.toffeelive.com/images/program/301935/logo/240x240/mobile_logo_428673001738570163.png" alt="Sports Highlights">
+    <p>Champions Trophy 2025 VIP</p>
+    <p>Eng</p>
+  </div>
+  <div class="grid-item" onclick="openModal('https://amartechbd.xyz/toffeebd/?play=sports_highlights')">
+    <img class="lazy" data-src="https://images.toffeelive.com/images/program/19779/logo/240x240/mobile_logo_975410001725875598.png" alt="Movies">
+    <p>TOFFEE Sports VIP</p>
+    <p></p>
+  </div>
+  <div class="grid-item" onclick="openModal('https://amartechbd.xyz/toffeebd/?play=toffee_movie')">
+    <img class="lazy" data-src="https://images.toffeelive.com/images/program/2708/logo/240x240/mobile_logo_724353001725875591.png" alt="Dramas">
+    <p>TOFFEE Movies VIP</p>
+    <p></p>
+  </div>
+  <div class="grid-item" onclick="openModal('https://amartechbd.xyz/toffeebd/?play=toffee_drama')">
+    <img class="lazy" data-src="https://images.toffeelive.com/images/program/44878/logo/240x240/mobile_logo_764950001725875605.png" alt="CNN">
+    <p>TOFFEE Dramas VIP</p>
+  </div>
+  <div class="grid-item" onclick="openModal('https://amartechbd.xyz/toffeebd/?play=cnn')">
+    <img class="lazy" data-src="https://images.toffeelive.com/images/program/333/logo/240x240/mobile_logo_146607001735536058.png" alt="Euro Sport">
+    <p>CNN VIP</p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <iframe id="videoIframe" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
